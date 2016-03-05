@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "pe.edu.unmsm.sistemas.ads.demoads"
-        minSdkVersion 21
+        minSdkVersion 8
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 13
+        versionName "1.3"
     }
     buildTypes {
         release {

@@ -44,6 +44,14 @@
             android:elevation="10dp"
             android:onClick="segundaActividad" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            android:id="@+id/button3"
+            android:layout_gravity="right"
+            android:onClick="actividadGPS" />
+
     </LinearLayout>
 
 </RelativeLayout>

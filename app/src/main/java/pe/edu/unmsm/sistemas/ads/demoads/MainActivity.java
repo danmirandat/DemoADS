@@ -69,4 +69,10 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.left_in, R.anim.left_out);
     }
 
+    public void actividadGPS(View button) {
+        Intent intent = new Intent(this, GPSActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.left_in, R.anim.left_out);
+    }
+
 }

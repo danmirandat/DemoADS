@@ -3,6 +3,7 @@
     package="pe.edu.unmsm.sistemas.ads.demoads" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -23,6 +24,15 @@
         <activity
             android:name=".SecondaryActivity"
             android:label="@string/title_activity_secondary"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.edu.unmsm.sistemas.ads.demoads.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GPSActivity"
+            android:label="@string/title_activity_gps"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
