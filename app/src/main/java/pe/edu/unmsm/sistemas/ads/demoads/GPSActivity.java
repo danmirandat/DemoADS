@@ -66,6 +66,51 @@ public class GPSActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Toast.makeText(getApplicationContext(), "On start", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        Toast.makeText(getApplicationContext(), "On restart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Toast.makeText(getApplicationContext(), "On resume", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Toast.makeText(getApplicationContext(), "On pause", Toast.LENGTH_SHORT).show();
+        desactivarGPS();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        Toast.makeText(getApplicationContext(), "On stop", Toast.LENGTH_SHORT).show();
+        desactivarGPS();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Toast.makeText(getApplicationContext(), "On destroy", Toast.LENGTH_SHORT).show();
+        desactivarGPS();
+    }
+
     public void verificarPermisoGPS() {
         tvTraza.append("Verificando permisos" + "\n");
         if (ContextCompat.checkSelfPermission(this,
